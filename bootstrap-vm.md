@@ -16,7 +16,7 @@ First we will download the shell file to your cloud shell directory to
 run the shiny application. These 2 commands will pull in the shell file
 `vmshiny.sh` and run it (may take a minute or 2)
 
-``` r
+``` bash
 gsutil cp gs://streamline-startup-scripts/vmshiny.sh ./
 source vmshiny.sh
 ```
