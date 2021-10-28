@@ -1,0 +1,40 @@
+---
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Creating an RStudio Virtual Machine
+
+## Getting the Shiny Requirements
+
+First we will download the shell file to your cloud shell directory to run the shiny application.  These 2 commands will pull in the shell file `vmshiny.sh` and run it (may take a minute or 2)
+
+```r
+gsutil cp gs://streamline-startup-scripts/vmshiny.sh ./
+source vmshiny.sh
+```
+
+
+Hello world
+
+### Part 1
+
+Part one instructions.
+
+### Part 2
+
+Part two instructions.
+
+## Conclusion
+
+Done!
+
+<walkthrough-spotlight-pointer
+    spotlightId="devshell-web-preview-button">
+    spotlight on the web preview icon
+</walkthrough-spotlight-pointer>
+
+
