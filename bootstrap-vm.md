@@ -47,6 +47,9 @@ Click the Web Preview Icon
 the port to `3838` since that’s what Shiny typically runs on, including
 this docker container.
 
+Then add `/create_vm` to the end of the URL to navigate to that
+application if the initial page is simply the Shiny landing page.
+
 ## Conclusion
 
 Done!

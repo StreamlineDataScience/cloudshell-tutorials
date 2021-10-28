@@ -46,6 +46,8 @@ https://shell.cloud.google.com/devshell/proxy?port=3838&environment_id=default&d
 Click the Web Preview Icon <walkthrough-web-preview-icon></walkthrough-web-preview-icon> and 
 change the port to `3838` since that's what Shiny typically runs on, including this docker container.
 
+Then add `/create_vm` to the end of the URL to navigate to that application if the initial page is simply the Shiny landing page.
+
 
 
 ## Conclusion
