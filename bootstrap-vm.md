@@ -42,14 +42,10 @@ This URL should open up in a new window with the shiny application.
 
 ### Use Web Preview
 
-Click the Web Preview Icon:
-
-<walkthrough-spotlight-pointer
-    spotlightId="devshell-web-preview-button"> spotlight on the web
-preview icon </walkthrough-spotlight-pointer>
-
-Change the port to `3838` since that’s what Shiny typically runs on,
-including this docker container.
+Click the Web Preview Icon
+<walkthrough-web-preview-icon></walkthrough-web-preview-icon> and change
+the port to `3838` since that’s what Shiny typically runs on, including
+this docker container.
 
 ## Conclusion
 
