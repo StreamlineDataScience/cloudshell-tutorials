@@ -1,0 +1,59 @@
+---
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Connecting to an RStudio Virtual Machine
+
+## Overview
+
+Here we will walk you through how to connect to an RStudio Virtual Machine (VM).
+
+**Time to complete**: About 2 minutes
+
+Click the **Start** button to move to the next step.
+
+
+## Getting Startup Scripts
+
+First we will download the shell file to your cloud shell directory to run the shiny application.  These 2 commands will pull in the shell file `vmshiny.sh` and run it (may take a minute or 2)
+
+```bash
+gsutil cp gs://streamline-startup-scripts/vmshiny.sh ./
+source vmshiny.sh
+```
+
+If this fails, you need to request access to `gs://streamline-startup-scripts`.
+
+### Overview of what's going on
+
+The `vmshiny.sh` is running a `docker pull` command on a Docker image that we created running shiny that is based on https://github.com/rocker-org/rocker-versioned2.  Then the script runs docker with `-p 3838:3838` which forwards the port 3838 to the Cloud Shell.
+
+## Running the Shiny App
+
+
+### Just trying a URL
+
+This URL should open up in a new window with the shiny application.
+
+https://shell.cloud.google.com/devshell/proxy?port=3838&environment_id=default&devshellProxyPath=/create_vm
+
+### Use Web Preview
+
+Click the Web Preview Icon <walkthrough-web-preview-icon></walkthrough-web-preview-icon> and 
+change the port to `3838` since that's what Shiny typically runs on, including this docker container.
+
+Then add `/create_vm` to the end of the URL to navigate to that application if the initial page is simply the Shiny landing page.
+
+
+
+## Conclusion
+
+Done!
+
+
+
+
